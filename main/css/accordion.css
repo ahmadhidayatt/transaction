@@ -1,0 +1,140 @@
+* {
+    padding : 0px;
+    margin : 0px;
+}
+.navbar h3 a:hover,.navbar h3 a:visited,.navbar h3 a:active {
+    color: #fff;
+
+}
+.accordion{
+
+
+    background-color: #222222;
+
+}
+.navbar h3 {
+
+    color: grey;
+    width:225px;
+    margin-top: 0px;
+    margin-bottom:0px; 
+    padding-left:0px;
+    padding-top:-20px;
+    padding-right:  1px;
+    border-style: none;
+    background-color: #25496B;
+    font-family: 'Titillium',sans-serif;
+    font-size: 100%;
+    overflow:hidden;
+
+
+}
+
+.navbar h3 span{
+    
+    float:right;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.navbar a{
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom:  15px;
+    margin-top:  0px;
+    text-decoration: none;
+    color: grey;
+    /*font-size: 18px;*/
+    border-style: none;
+    display: inherit;
+    padding-right: 17px;
+
+
+}
+.navbar h3:hover,h3:focus{
+    color: grey;
+    text-decoration: none;
+    /*background-color: #030301;*/
+    width:225px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+
+
+
+
+.navbar a:hover,.navbar a:focus,.navbar a:visited,.navbar a:active{
+    /*background-color: black;*/
+    padding-right: auto;
+
+}
+
+
+
+
+.submenu li{
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+    display: block;
+
+}
+.submenu{
+    padding: auto;
+    height: auto;
+
+}
+.submenu a{
+    display:inherit;
+    padding-left: 12px;
+    padding-right: 0px;
+    width: 225px;
+    background-color:#222222;
+    font-family: 'Titillium',sans-serif;
+    font-size: 100%;
+}
+submenu img:hover{
+    border-color: #fff;
+    /*background-color: transparent;*/
+    /*    text-align: center;
+        width: 5px;
+        display: inline-block;
+        font-family: FontAwesome;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-language-override: normal;
+        font-size: inherit;
+        font-size-adjust: none;
+        font-stretch: normal;
+        font-style: normal;
+        font-synthesis: weight style;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1;
+        text-rendering: auto;*/
+}
+
+.submenu li a:hover, .submenu li a:focus ,.submenu li a:active,.submenu li a:visited{
+    display: inherit;
+    /*background-color: black;*/
+    color: #fff;
+}
+
+/*.contactlist a{
+    background-color: black;
+}*/
+
+#accordion a span.title {
+    float: right;
+  
+}
+
+#accordion a span.ui-icon {
+    position: static;   
+    height: 15px;
+   
+}
+
+

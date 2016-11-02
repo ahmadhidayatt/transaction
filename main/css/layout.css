@@ -1,0 +1,532 @@
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+.container-fluid{
+    padding-top:  50px;
+
+}
+.collapse navbar-collapse{
+
+}
+.navbar-inverse{
+    background-color: #25496B;
+}
+.sidebar-nav{
+    position: fixed;
+    top: 51px;
+    left: 225px;
+    width: 225px;
+    margin-left: -400px;
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: #222;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+}
+.sidebar-brand{
+
+}
+#menusidebar{
+    text-decoration: none;
+}
+#menusidebar li{
+
+}
+.text-right{
+    float:right;
+    padding-right: 20px;
+}
+.text-right i{
+    height:20px;
+    width:20px;
+    color:white;
+    display:block;
+}
+.wrapper{
+    margin-top: 50px;
+}
+footer{
+    height: 10px
+}
+table.tlogin th{
+    padding-left: 0px;
+    padding-right: 5px;
+}
+table.tlogin td{
+    padding-right: 5px;
+    padding-top: 5px;
+
+}
+.loginhead{
+    font-family: Impact, Charcoal,sans-serif;font-size:42px;
+    color: #fff ;
+    padding-left: 35px;
+}
+.button{
+    width: content-box;
+}
+table.tlogin{
+    align-content: center;
+    height: 200px;;
+}
+#content1{
+    /*    background-color:  #25496B ;*/
+    background-image: url("../img/backgroud.png");
+    background-size: 100% 100%;
+    height: 648px;
+}
+#contentproduct{
+    /*    background-color:  #25496B ;*/
+
+    background-size: 100% 100%;
+
+}
+#content2{
+    background-color:  #fff ;  
+
+    height: 300px;
+}
+#content3{
+    background-color:  #fff ;
+
+    height: 130px;
+}
+#content4{
+    background-color:  #222222 ;
+    height: 400px
+
+}
+#head-right{
+    padding-left: 50px;
+    padding-top: 20px;
+
+
+}
+#signup-panel{
+    margin-top: 100px;
+}
+#signup-panel a{
+    color: black;
+    text-decoration: none;
+}
+#signup{
+
+    animation: fungsilogin 2s ease-in normal;
+}
+
+@keyframes fungsilogin {
+    0%{
+
+        margin-left:-800px;
+
+
+    }
+
+
+
+}
+table.tsignup th{
+    padding-left: 0px;
+    padding-right: 10px;
+    font-family: arial, Charcoal,sans-serif;
+
+}
+table.tsignup td input{
+    font-family: arial, Charcoal,sans-serif;
+    width: 250px;
+}
+
+table.tsignup{
+    width: 360px;
+
+}
+table.tsignup td{
+    padding-left: 15px;
+    padding-top: 10px;
+
+}
+#button{
+
+    cursor: pointer;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+#button a{
+    background-color: #25496B;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 135px;
+    padding-right: 123px;
+    font-family: arial, Charcoal,sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#head-mid{
+margin-left: 100px;
+
+}
+#head-mid a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: arial, Charcoal,sans-serif;
+
+    font-size: 40px;
+
+}
+#head-mid a img{
+    
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    animation: rotation 2s infinite linear;
+    transform-style: preserve-3d;
+    transform: rotateY(10deg) translateZ(288px);
+
+}
+#head-mid a img:hover{
+    animation-play-state: paused;
+}
+#head-mid a img{}
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+#headhead{
+    margin-top: 108px;
+    margin-left: -30px;
+}
+.button {
+  border-radius: 4px;
+  background-color: cornflowerblue;
+  border: none;
+  color: threedhighlight;
+  text-align: center;
+  font-size: 25px;
+  padding-left: 5px;
+  
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*@keyframes fungsi {
+    1%{
+       
+      margin-left:900px;
+         transform: rotate(90deg);
+
+    }
+    25%{
+
+        margin-left:700px;
+        transform: rotate(-180deg);
+
+    }
+    50%{
+        margin-top:400px;
+        margin-left:700px;
+        transform: rotate(630deg);
+
+    }
+    75%{
+        margin-top:400px;
+        margin-left:100px;
+        transform: rotate(-90deg);
+
+    }
+    90%{
+        margin-top:200px;
+        margin-left:0px;
+        transform: rotate(90deg);
+
+    }
+
+
+
+
+
+}*/
+ul.ui-autocomplete.ui-menu{
+    padding-top: 30px;
+    background-color: #222;
+    width:400px ;
+    height: 200px;
+    max-height: 300px;
+    cursor: pointer;
+    overflow-y: auto;
+
+}
+ul.ui-autocomplete.ui-menu li{
+    color: #fff;
+    list-style: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+/* 
+    targets the first result's <a> element, 
+    remove the a at the end to target the li itself 
+*/
+ul.ui-autocomplete.ui-menu li:first-child a{
+
+    color:blue;
+}
+ul.ui-autocomplete.ui-menu li:hover {
+    background-color: #0f0f0f;
+}
+ui-autocomplete {
+    max-height: 300px;
+    height: 70px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+
+}
+ul.ui-autocomplete.ui-menu li {
+    padding-left: 40px;
+}
+#book{
+    width: 100%;
+    height: 100%;
+    top:0px;
+    display: inherit;
+
+
+    background-color: #25496B;
+}
+#book ul li{
+    list-style: none;
+    float: left;
+    width: 200px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+#book ul li a{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;  text-decoration: none;
+
+}
+#book ul{
+    top:0px;
+    bottom: -20px;
+}
+#book ul li:hover {
+
+
+}
+#tplane{
+    size: 100px;
+
+}
+#tplane tr{
+    padding: 1px 0px 1px 0px;   
+
+}
+#tplane td{
+    height: 30px;
+    border-right: 1px solid white;
+    border-left:  1px solid white;
+    width: 356px;
+    padding-left: 50px;
+
+}
+#tplane a{
+    color:#fff;
+    text-decoration: none;
+    font-family: arial, Charcoal,sans-serif;
+
+
+}
+#tplane li{
+    list-style: none;
+}
+#Cari{
+    padding-left: -50px;
+    width: 100%;
+    border-radius: 5px;
+}
+#tplane input{
+    border-radius: 5px;
+    width:250px;
+}
+#tplane output{
+    margin-left: 100px;
+    color: white;
+
+}
+#tplane input:active {
+
+    box-shadow: 0 5px #666;
+
+}
+#tplane img:hover{
+    animation: fungsi2 2s infinite ;
+}
+@keyframes fungsi2 {
+    50%{
+        transform: rotate(270deg);
+
+    }
+}
+
+.contentfooter{
+    color:#222222;
+    cursor:pointer;
+}
+.contentfooter:hover{
+    color:white;
+    text-decoration: none;
+}
+#thotel{
+    size: 100px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+}
+#thotel tr{
+    padding: 1px 0px 1px 0px;   
+
+}
+#thotel td{
+    height: 30px;
+
+
+    width: 356px;
+    padding-left: 50px;
+
+}
+#thotel a{
+    color:#fff;
+    text-decoration: none;
+    font-family: arial, Charcoal,sans-serif;
+
+
+}
+#thotel li{
+    list-style: none;
+}
+#thotel input{
+    border-radius: 5px;
+    width:500px;
+}
+#thotel output{
+    margin-left: 100px;
+    color: white;
+
+}
+#thotel h4{
+    color: white;
+    margin-left: 150px;
+}
+#thotel button{
+    float: right;
+    margin-top: -0px;
+    background: transparent;
+    border: none;
+
+
+}
+#thotel button:hover{
+    /*    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+
+}
+#thotel img{
+    height: 40px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition:        all 0.3s ease-in-out;
+    border:none;
+
+}
+#thotel img:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(-90deg);
+}
+#thotel img:active{
+    transition: all 0.1s ease-in;
+    transform: rotate(0deg);
+}
+
+#table{
+    padding-left: 3px;
+
+
+}
+#table th{
+    padding-left: 10px;
+}
+#table tr{
+    padding: 1px 0px 1px 0px;   
+
+}
+#table td{
+    height: 20px;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+
+
+}
+
+
+
+#table output{
+    margin-left: 100px;
+    color: white;
+
+}
+
+#table button{
+    float: right;
+    margin-top: -0px;
+
+    border: none;
+
+
+}
+#table button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.buttoncetak{
+    margin-top: 50px;
+}

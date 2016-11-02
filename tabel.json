@@ -1,0 +1,36 @@
+
+{
+    "response":
+            [{
+                    "head": "TI-D",
+                    "senin": "upacara",
+                    "selasa": "futsal",
+                    "rabu": "basket",
+                    "kamis": "tkj",
+                    "jumat": "animasi",
+                    "sabtu": "renang",
+                    "minggu": "hang-out"
+                },
+                {
+                    "head": "TI-E",
+                    "senin": "futsal",
+                    "selasa": "pramuka",
+                    "rabu": "mhasabah",
+                    "kamis": "coding",
+                    "jumat": "design",
+                    "sabtu": "sepak bola",
+                    "minggu": "ngaji"
+                },
+                {
+                    "head": "TI-G",
+                    "senin": "main",
+                    "selasa": "main",
+                    "rabu": "main",
+                    "kamis": "main",
+                    "jumat": "coding",
+                    "sabtu": "pacaran",
+                    "minggu": "galau"
+                }
+            ]
+}
+

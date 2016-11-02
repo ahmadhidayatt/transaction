@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ahmad Hidayat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <link rel="icon" type="img/gif" href="main/img/logo.png">
+        <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+        <script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+        <link rel="stylesheet" href="lib/css/bootstrap.css">
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main/css/layout.css">
+        <link rel="stylesheet" href="main/css/accordion.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="main/js/accordion.js"></script>
+        <script type="text/javascript" src="main/js/accordion2.js"></script>
+        <script type="text/javascript" src="main/js/drawmenudays.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <script>
+            var stateopen = 0;
+            function showMenu() {
+                if (stateopen == 0) {
+                    $("#menusidebar").animate({marginLeft: "-225px"}, 300);
+                    $("#framecontainer").animate({marginLeft: "165px"}, 300);
+                    $("#menus").removeClass("glyphicon glyphicon-eye-open");
+                    $("#menus").addClass("glyphicon glyphicon-eye-close");
+                    stateopen = 1;
+                } else {
+                    stateopen = 0;
+                    $("#menusidebar").animate({marginLeft: "-410px"}, 300);
+                    $("#framecontainer").animate({marginLeft: "-20px"}, 300);
+                    $("#menus").removeClass("glyphicon glyphicon-eye-close");
+                    $("#menus").addClass("glyphicon glyphicon-eye-open");
+//                
+                }
+            }
+            ;
+
+
+            function panggil() {
+//                var importer = new Import();
+//                Home = new Home();
+//                Home.start();
+                drawMenu();
+                footer();
+
+            }
+            ;
+
+
+
+        </script>
+
+
+
+
+
+
+    </head>
+    <body onload="panggil()">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"></button>
+                <a class="navbar-brand" href="#">
+                    ahmad
+                </a>
+            </div>
+            <div class="navbar-nav">
+
+
+            </div>
+            <div class="ui-widget">
+                <ul class="nav navbar-nav navbar-right" style="padding-right:20px " id="search">
+                    <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    <li> <a >Search: <input type="text" id="tags" style="color: #222222;cursor: pointer; height:20px; " /></a> 
+                    </li>
+
+                </ul>
+
+            </div>
+              <div class="collapse navbar-collapse" id="collapse">
+                <ul id="menusidebar" class="nav navbar-nav sidebar-nav" style="overflow: hidden;">
+
+
+                    <div id="contactlist">
+                        <li style="cursor:pointer;" >
+                            <a   class="text-right" onclick="showMenu()" ><i id="menus" class="	glyphicon glyphicon-eye-open"></i></a>
+                        </li>
+                        <div id="accordion">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+        </nav>
+        <div id="framecontainer" style='position:absolute; top:50px; left: 60px; right: 0; bottom: 0; margin-left: -20px !important'>
+            <iframe id='framepage' src="" frameborder='0' width='100%' scrolling='yes' frameborder='0' style='height:100%;'></iframe>
+
+        </div>
+
+        <nav class="navbar-inverse navbar-fixed-bottom "style="height: 25px; " >
+
+
+            <marquee id="footer" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> </marquee>
+
+        </nav>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog" >
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="headmodal">
+                            politik
+                        </h4>
+                    </div>
+                    <div class="modal-body" >
+                        <p id="bodymodal">
+                  ahok meminta maaf atas kesalahanya kepada publik jumat kemarin
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

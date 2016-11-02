@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name":"politik",
+            "deskripsi": "ahok minta maaf akibat kesalahanya",
+            "url":"berita1"
+        },
+        {
+           "name":"ekonomi",
+            "deskripsi": "harga gula di pulau jawa semakin melemah",
+            "url":"berita2"
+        }
+    ]
+}

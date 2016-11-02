@@ -1,0 +1,17 @@
+{
+    "response":
+            [
+                {
+                    "username": "admin",
+                    "password": "abcd1234",
+                    "id":"0"
+
+                },
+                {
+                    "username": "user",
+                    "password": "abcd1234",
+                    "id":"1"
+
+                }
+            ]
+}

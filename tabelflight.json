@@ -1,0 +1,154 @@
+{
+    "kota":
+            [{
+                    "bandara": "soekarno-hatta",
+                    "nama": "jakarta",
+                    "stasiun": "senen"
+
+                },
+                {
+                    "bandara": "halim perdana",
+                    "nama": "bekasi",
+                    "stasiun": "Bekasi timur"
+                },
+                {
+                    "bandara": "yogyakarta",
+                    "nama": "DIY yogyakarta",
+                    "stasiun": "yogya"
+                }
+
+            ],
+    "tiketpesawat":
+            [{
+                    "namapesawat": "air asia",
+                    "bandarakeberangkatan": "soekarno-hatta",
+                    "bandarakedatangan": "halim perdana",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "120000",
+                    "hargastandart": "200000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "19:00"
+                },
+                {
+                    "namapesawat": "lion air",
+                    "bandarakeberangkatan": "soekarno-hatta",
+                    "bandarakedatangan": "halim perdana",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "100000",
+                    "hargastandart": "120000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "20:00"
+                },
+                {
+                    "namapesawat": "garuda indonesia",
+                    "bandarakeberangkatan": "soekarno-hatta",
+                    "bandarakedatangan": "halim perdana",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "250000",
+                    "hargastandart": "400000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "18:30"
+                },
+                {
+                    "namapesawat": "batavia",
+                    "bandarakeberangkatan": "soekarno-hatta",
+                    "bandarakedatangan": "halim perdana",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "150000",
+                    "hargastandart": "250000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "19:30"
+                },
+                {
+                    "namapesawat": "air asia",
+                    "bandarakeberangkatan": "soekarno-hatta",
+                    "bandarakedatangan": "halim perdana",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "120000",
+                    "hargastandart": "200000",
+                    "jamberangkat": "19:00",
+                    "jamtiba": "20:00"
+                }
+            ],
+    "tiketkereta":
+            [{
+                    "namakereta": "bengawan",
+                    "stasiunkeberangkatan": "senen",
+                    "stasiunkedatangan": "yogya",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "120000",
+                    "hargastandart": "200000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "19:00"
+                },
+                {
+                    "namakereta": "bengawun",
+                    "stasiunkeberangkatan": "senen",
+                    "stasiunkedatangan": "yogya",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "120000",
+                    "hargastandart": "200000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "19:00"
+                },
+                {
+                    "namakereta": "solo",
+                    "stasiunkeberangkatan": "senen",
+                    "stasiunkedatangan": "yogya",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "hargadibawah": "130000",
+                    "hargastandart": "230000",
+                    "jamberangkat": "18:00",
+                    "jamtiba": "19:00"
+                }
+            ],
+    "tikethotel":
+            [{
+                    "namahotel": "melati",
+                    "kotakedatangan": "jakarta",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "harga2bed": "120000",
+                    "harga3bed": "200000",
+                    "jamcheckin": "18:00",
+                    "jamcheckout": "19:00"
+                },
+                {
+                    "namahotel": "mawar",
+                    "kotakedatangan": "jakarta",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "harga2bed": "120000",
+                    "harga3bed": "200000",
+                    "jamcheckin": "18:00",
+                    "jamcheckout": "19:00"
+                },
+                {
+                    "namahotel": "bunga",
+                    "kotakedatangan": "jakarta",
+                    "tanggal": "2016-10-12",
+                    "max": "20",
+                    "harga2bed": "120000",
+                    "harga3bed": "200000",
+                    "jamcheckin": "18:00",
+                    "jamcheckout": "19:00"
+                }
+            ]
+}
+
+
+
+
+
+
+
+
+

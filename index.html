@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="img/gif" href="main/img/logo.png">
+        <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="main/css/layout.css">
+        <link rel="stylesheet" href="main/css/accordion.css">
+        <script type="text/javascript" src="main/js/accordion.js"></script>
+        <script type="text/javascript" src="main/js/login.js"></script>
+        <script type="text/javascript" src="main/js/accordion2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript">
+
+        </script>    
+        <script type="text/javascript" src="//connect.facebook.net/en_US/all.js"></script>
+    </head>
+    <body class="container-fluid" style="background-color: #25496B" onload="Captcha()">
+        <div id="fb-root"></div>
+        <script>
+
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1148207058593009',
+                    xfbml: true,
+                    version: 'v2.8'
+                });
+                FB.AppEvents.logPageView();
+                FB.Event.subscribe('auth.authResponseChange', function (response)
+                {
+                    if (response.status === 'connected')
+                    {
+                        testAPI();
+                        alert("Connected to Facebook");
+                        //SUCCESS
+
+                    } else if (response.status === 'not_authorized')
+                    {
+                        alert("Failed to Connect");
+                        //FAILED
+                    } else
+                    {
+                        alert("Logged Out");
+                        //UNKNOWN ERROR
+                    }
+                });
+            };
+            function testAPI() {
+                console.log('Welcome!  Fetching your information.... ');
+                FB.api('/me', function (response) {
+                    console.log('Successful login for: ' + response.name);
+                    document.getElementById('status').innerHTML =
+                            'Thanks for logging in, ' + response.name + '!';
+                });
+            }
+            function Login()
+            {
+
+                FB.login(function (response) {
+                    if (response.authResponse)
+                    {
+                         console.log(response);
+                        getUserInfo();
+                    } else
+                    {
+                        console.log('User cancelled login or did not fully authorize.');
+                    }
+                }, {scope: 'public_profile,email,user_photos,user_videos'});
+            }
+
+            function getUserInfo() {
+                FB.api('/me', function (response) {
+                    setCookie("login", response.name);
+                    window.location = "home.html";
+                    //                    var str = "<b>Name</b> : " + response.name + "<br>";
+                    //                    str += "<b>Link: </b>" + response.link + "<br>";
+                    //                    str += "<b>Username:</b> " + response.username + "<br>";
+                    //                    str += "<b>id: </b>" + response.id + "<br>";
+                    //                    str += "<b>Email:</b> " + response.email + "<br>";
+                    //                    str += "<input type='button' value='Get Photo' onclick='getPhoto();'/>";
+                    //                    str += "<input type='button' value='Logout' onclick='Logout();'/>";
+                    //                    document.getElementById("status").innerHTML = str;
+
+                });
+            }
+            function getPhoto()
+            {
+                FB.api('/me/picture?type=normal', function (response) {
+
+                    var str = "<br/><b>Pic</b> : <img src='" + response.data.url + "'/>";
+                    document.getElementById("status").innerHTML += str;
+                });
+            }
+            function Logout()
+            {
+                FB.logout(function () {
+                    document.location.reload();
+                });
+            }
+
+            // Load the SDK asynchronously
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.8";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div id="message">
+
+        </div>
+
+
+        <div class="container">    
+            <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+                <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+                    <div style="padding-top:30px" class="panel-body" >
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                        <form id="loginform" class="form-horizontal" role="form">
+                            <div style="margin-bottom: 25px" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="username ">                                        
+                            </div>
+                            <div style="margin-bottom: 25px" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="password">
+                            </div>
+                            <div class="input-group" style="margin-bottom: 25px">
+                                <span class="input-group-addon" id="refresh" onclick="Captcha();"><i class="glyphicon glyphicon-refresh"></i></span>
+                                <input type="text" class="form-control" name="captcha" id="mainCaptcha" readonly style="font-family: Arial, Helvetica, sans-serif;font-style: oblique;font-size: 28px; ">
+
+                            </div>
+                            <div class="input-group" style="margin-bottom: 25px">
+                                <span class="input-group-addon" ><i class="glyphicon glyphicon-check"></i></span>
+                                <input  type="text" class="form-control" id="txtInput" placeholder="masukan capctha"/>    
+                            </div>
+                            <div class="input-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div style="margin-top:10px" class="form-group">
+                                <!-- Button -->
+
+                                <div class="col-sm-12 controls">
+                                    <a id="btn-login" onclick="ValidCaptcha()" class="btn btn-success">Login  </a>
+                                    <!--                                    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="false"></div>-->
+                                    <div id="status">
+                                        <a id="btn-fblogin"  class="btn btn-primary" onclick="Login()"> Login with Facebook
+                                        </a>
+
+                                    </div>
+                                    <!--                                                    <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>-->
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 control">
+                                    <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                        Don't have an account! 
+                                        <a href="#" onClick="$('#loginbox').hide();
+                                                $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </form>     
+                    </div>                     
+                </div>  
+            </div>
+            <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign Up</div>
+                        <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide();
+                                $('#loginbox').show()">Sign In</a></div>
+                    </div>  
+                    <div class="panel-body" >
+                        <form id="signupform" class="form-horizontal" role="form">
+                            <div id="signupalert" style="display:none" class="alert alert-danger">
+                                <p>Error:</p>
+                                <span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-md-3 control-label">Email</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-md-3 control-label">Password</label>
+                                <div class="col-md-9">
+                                    <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                </div>
+                            </div>
+                            <!--                                            <div class="form-group">
+                                                                            <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" class="form-control" name="icode" placeholder="">
+                                                                            </div>
+                                                                        </div>-->
+                            <div class="form-group">
+                                <!-- Button -->                                        
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                    <span style="margin-left:8px;"> </span>  
+                                </div>
+                            </div>
+
+                            <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+
+                                <div class="col-md-offset-3 col-md-9">
+                                    <!--                                                    <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                                                                    </div>                                           -->
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+{
+    "admin":
+            [{
+                    "name": "local storage ",
+                    "group": "1",
+                    "href": "#",
+                    "groupname": "approval",
+                    "iconhead": "fa fa-fw fa-refresh",
+                    "iconsub": "fa fa-fw fa-clock-o",
+                    "code": "localstorage"
+                },
+                {
+                    "name": "data mahasiswa ",
+                    "group": "2",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-refresh",
+                    "iconsub": "fa fa-fw fa-clock-o",
+                    "code": "reportmhs"
+                },
+                {
+                    "name": "user profile",
+                    "group": "3",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "userprofile"
+                },
+                {
+                    "name": "table dynamic ",
+                    "group": "4",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-calendar-minus-o",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "dynamictabel"
+                },
+                {
+                    "name": "jumbotron ",
+                    "group": "5",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "jumbotron"
+                },
+                {
+                    "name": "gallery",
+                    "group": "5",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "gallery"
+                },
+                {
+                    "name": "form resmi",
+                    "group": "5",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "formresmi"
+                }
+
+            ],
+    "user":
+            [{
+                    "name": "local storage ",
+                    "group": "1",
+                    "href": "#",
+                    "groupname": "approval",
+                    "iconhead": "fa fa-fw fa-refresh",
+                    "iconsub": "fa fa-fw fa-clock-o",
+                    "code": "localstorage"
+                },
+                {
+                    "name": "data mahasiswa ",
+                    "group": "2",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-refresh",
+                    "iconsub": "fa fa-fw fa-clock-o",
+                    "code": "reportmhs"
+                },
+                {
+                    "name": "user profile ",
+                    "group": "3",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "userprofile"
+                },
+                {
+                    "name": "jumbotron ",
+                    "group": "4",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-calendar-minus-o",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "jumbotron"
+                }
+            ],
+    "Ahmad Hidayat":
+            [{
+                    "name": "local storage ",
+                    "group": "1",
+                    "href": "#",
+                    "groupname": "approval",
+                    "iconhead": "fa fa-fw fa-refresh",
+                    "iconsub": "fa fa-fw fa-clock-o",
+                    "code": "localstorage"
+                },
+                {
+                    "name": "data mahasiswa ",
+                    "group": "2",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-refresh",
+                    "iconsub": "fa fa-fw fa-clock-o",
+                    "code": "reportmhs"
+                },
+                {
+                    "name": "user profile",
+                    "group": "3",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "userprofile"
+                },
+                {
+                    "name": "table dynamic ",
+                    "group": "4",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-calendar-minus-o",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "dynamictabel"
+                },
+                {
+                    "name": "jumbotron ",
+                    "group": "5",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "jumbotron"
+                },
+                {
+                    "name": "gallery",
+                    "group": "5",
+                    "href": "#",
+                    "groupname": "user",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "gallery"
+                },
+                {
+                    "name": "form resmi",
+                    "group": "5",
+                    "href": "#",
+                    "groupname": "report",
+                    "iconhead": "fa fa-fw fa-users",
+                    "iconsub": "fa fa-fw fa-cube",
+                    "code": "formresmi"
+                }
+
+            ]
+}
+
+
+
+
+
+
+
+
+

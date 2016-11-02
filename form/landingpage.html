@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head><title>landing page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="img/gif" href="../main/img/logo.png">
+        <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../lib/css/bootstrap.css">
+        <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../main/css/game.css">
+        <link rel="stylesheet" href="../main/css/layout.css">
+        <link rel="stylesheet" href="../main/css/accordion.css">
+        <script type="text/javascript" src="../main/js/accordion.js"></script>
+        <script type="text/javascript" src="../main/js/game.js"></script>
+        <script type="text/javascript" src="../main/js/landingpage.js"></script>
+        <script type="text/javascript" src="../main/js/accordion2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <script>
+
+            window.onload = function () {
+                document.getElementById('ppinput').style.display = 'none';
+                document.getElementById('ppinput1').style.display = 'none';
+            }
+            function yesnoCheck1() {
+                if (document.getElementById('pp1').checked) {
+                    document.getElementById('ppinput1').style.display = 'block';
+                } else {
+                    document.getElementById('ppinput1').style.display = 'none';
+                }
+            }
+            function yesnoCheck() {
+                if (document.getElementById('pp').checked) {
+                    document.getElementById('ppinput').style.display = 'block';
+                } else {
+                    document.getElementById('ppinput').style.display = 'none';
+                }
+            }
+
+
+        </script>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="#">ahmad hidayat</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#head">home</a>
+                        </li>
+                        <li>
+                            <a href="#contentproduct">product</a>
+                        </li>
+                        <li>
+                            <a href="#book">pesan</a>
+                        </li>
+                        <li>
+                            <a href="#content3">game</a>
+                        </li>
+                        <li>
+                            <a href="#content4">content </a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <a name="head"></a>
+        <div class="container-fluid  " id="head" >
+
+            <div class="row"  id="content1">
+
+                <div class="col-xs-4- col-sm-4 col-md-4 col-lg-4" id="head-right">
+                    <div id="head-mid">
+
+                        <a onclick="login()"><img src="../main/img/user-1.png"/></a>
+
+                    </div >
+                    <div id="headhead">
+                        <button class="button"><span>Login </span></button>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-4 col-sm-4 col-md-8 col-lg-4"  id="signup" >
+                    <div class="panel panel-default" id="signup-panel" >
+                        <div class="panel-heading" ><a style="text-decoration: none ">sign up</a></div>
+                        <div class="panel-body">
+                            <table class="tsignup" > 
+                                <tr >
+                                    <th>username</th>
+                                    <th>: </th>
+                                    <td>
+                                        <input type="text" id="" placeholder="  enter username"  /> 
+                                    <td>
+                                </tr >
+                                <tr >    
+                                    <th>password</th>
+                                    <th>:</th>
+                                    <td >
+                                        <input type="password" id="" placeholder="  enter password"  /> 
+                                    <td>
+                                </tr>
+                                <tr >
+                                    <th>name</th>
+                                    <th>: </th>
+                                    <td>
+                                        <input type="text" id="name" placeholder="  enter your name"/> 
+                                    <td>
+
+                                </tr >
+                                <tr >
+                                    <th>email</th>
+                                    <th>: </th>
+
+                                    <td>
+                                        <input type="email" id="email"  placeholder="  enter email" /> 
+                                    <td>
+
+                                </tr >
+                                <tr >
+                                    <td style="padding-top: 10px" colspan="3" id="button">
+                                        <a  onclick="registration()" >register</a>
+                                        <!--                                        <button class="button" onclick="register()" >register</button>-->
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-8 col-lg-4" >
+
+                </div>
+
+            </div>
+
+        </div>
+        <a name="contentproduct"></a>
+        <div class="row" id="contentproduct" >
+            <div class="container-fluid -xs-12 -sm-12 col-md-12 "  style="padding-left: 0px;padding-right: 0px;">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="../main/img/prodplane.gif" alt="Traveling" style="width:1366px; height:500px;">
+                            <div class="carousel-caption">
+                                <h3>Travelling</h3>
+                                <p>The atmosphere when you are travel with me</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../main/img/prodplane1.png" alt="take off" style="width:1366px; height:500px;" >
+                            <div class="carousel-caption">
+                                <h3>take off</h3>
+                                <p>take off for travelling</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../main/img/prodplane2.jpg" alt="sky"  style="width:1366px; height:500px;">
+                            <div class="carousel-caption">
+                                <h3>sky</h3>
+                                <p>Beatiful sky</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../main/img/prodplane3.jpg" alt="island"  style="width:1366px; height:500px;">
+                            <div class="carousel-caption">
+                                <h3>island</h3>
+                                <p>visit an island in world</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../main/img/prodplane4.jpg" alt="safety"  style="width:1366px; height:500px;">
+                            <div class="carousel-caption">
+                                <h3>safety</h3>
+                                <p>safety first</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../main/img/prodplane5.jpg" alt="flight"  style="width:1366px; height:500px;">
+                            <div class="carousel-caption">
+                                <h3>flight</h3>
+                                <p>flight with us?</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../main/img/prodplane6.jpg" alt="plane"  style="width:1366px; height:500px;">
+                            <div class="carousel-caption">
+                                <h3>plane</h3>
+                                <p>plane</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <a name="book"></a>
+        <div class="container-fluid" id="book" style="margin-top:-50px;">
+
+            <div class="row" style="border: 1px solid; " id="content2">
+
+
+
+                <div class="col-xs-12  col-sm-12 col-md-12" id="book" >
+                    <article style="color: wheat;font-size: 20px;"> start booking here
+
+                    </article> 
+
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#flight">
+                                <i class="fa fa-plane" aria-hidden="true"></i>
+                                flight
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#home1">
+                                <i class="fa fa-train" aria-hidden="true"></i>
+                                train
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="tab" href="#hotel">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                hotel
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <div class="tab-content">
+                        <div id="datalist" >
+
+                        </div>
+                        <div id="flight" class="tab-pane fade in active">
+
+                            <table id="tplane" >
+                                <tr  >
+                                    <td colspan="3" rowspan="2">
+                                        <input id="Fberangkat" list="kota asal" placeholder="masukan bandara keberangkatan">
+
+
+                                    </td>
+
+                                    <td colspan="3" rowspan="2">
+                                        <input type="date" id="Ftanggalberangkat" name="berangkat" min="2000-01-02" placeholder="tanggal berangkat anda" />
+                                    </td>
+
+                                    <td colspan="4" >
+                                        <a style="font-size: 25px;"> Jumlah Penumpang</a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+
+
+
+                                </tr>
+                                <tr>
+                                    <td colspan="3" >
+                                        <a style=" padding-left: 100px;">  
+                                            <img src="../main/img/refresh.png" style="height:45px" />
+                                        </a>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <a> <input type="radio" id="sekali" name="type1" value="berangkat" checked onclick="yesnoCheck()" style="width: 100px;">  sekali berangkat<br></a>
+                                        <a><input type="radio" id="pp" name="type1" value="pp" onclick="yesnoCheck()" style="width: 100px;"> pulang pergi<br></a>
+                                    </td>
+
+                                    <td colspan="4" >
+                                        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)">
+                                            <li><a> Dibawah 2 tahun =<input type="number" id="bayi" name="a" value="0" style="width: 40px; margin-left: 4px; color: #000" min="0"></a></li>
+                                            <li><a> 2 -12 tahun     =   <input type="number" id="anak anak" name="b" value="0" style="width: 40px; margin-left:34px; color: #000 " min="0"></a></li>
+                                            <li> <a>diatas 12 tahun = <input type="number" id="dewasa" name="c" value="0" style="width: 40px; margin-left:9px; color: #000  " min="0"></a></li>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" rowspan="2">
+                                        <input id="Fkedatangan" list="kotatujuanflight" placeholder="masukan bandara kedatangan">
+
+
+                                    </td>
+
+                                    <td colspan="3" rowspan="2">
+                                        <input type="date" name="pulang" id="ppinput" min="2012-01-02" placeholder="tanggal pulang anda"/>
+                                    </td>
+
+                                    <td colspan="4" >
+                                        <output id="Fjumlah" name="x" for="a b" </output>
+
+                                        </form>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <input type="submit" id="Cari" name="b" value="cari tiket " onclick="caritiketpesawat()">
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+                            </table>
+
+                        </div>
+                        <div id="home1" class="tab-pane fade ">
+                            <table id="tplane" >
+                                <tr  >
+                                    <td colspan="3" rowspan="2">
+                                        <input id="Sberangkat" list="kotaasaltrain" placeholder="masukan stasiun berangkat anda">
+
+
+                                    </td>
+
+                                    <td colspan="3" rowspan="2">
+                                        <input id="Stanggalberangkat" type="date" name="berangkat" min="2000-01-02" placeholder="tanggal berangkat anda"/>
+                                    </td>
+
+                                    <td colspan="4" >
+                                        <a style="font-size: 25px;"> Jumlah Penumpang</a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+
+
+
+                                </tr>
+                                <tr>
+                                    <td colspan="3" >
+                                        <a style=" padding-left: 100px;">  
+                                            <img src="../main/img/refresh.png" style="height:45px" />
+                                        </a>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <a> <input type="radio" id="sekali1" name="type" value="berangkat1" checked onclick="yesnoCheck1()" style="width: 100px;">  sekali berangkat<br></a>
+                                        <a><input type="radio" id="pp1" name="type" value="pp1" onclick="yesnoCheck1()" style="width: 100px;"> pulang pergi<br></a>
+                                    </td>
+
+                                    <td colspan="4" >
+                                        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)">
+                                            <li><a> Dibawah 2 tahun =<input type="number" id="bayi" name="a" value="0" style="width: 40px; margin-left: 4px; color: #000" min="0"></a></li>
+                                            <li><a> 2 -12 tahun     =   <input type="number" id="anak anak" name="b" value="0" style="width: 40px; margin-left:34px; color: #000 " min="0"></a></li>
+                                            <li> <a>diatas 12 tahun = <input type="number" id="dewasa" name="c" value="0" style="width: 40px; margin-left:9px; color: #000  " min="0"></a></li>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" rowspan="2">
+                                        <input id="Skedatangan" list="kotatujuantrain" placeholder="masukan kota stasiun anda">
+
+
+                                    </td>
+
+                                    <td colspan="3" rowspan="2">
+                                        <input type="date" name="pulang" id="ppinput1" min="2012-01-02" placeholder="tanggal pulang anda"/>
+                                    </td>
+
+                                    <td colspan="4" >
+                                        <output name="x" for="a b" id="Sjumlah"</output>
+
+                                        </form>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <input type="submit" id="Cari" name="b" value="CARI "  onclick="caritiketkereta()">
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+                            </table>
+                        </div>
+                        <div id="hotel" class="tab-pane fade ">
+                            <table id="thotel" >
+                                <tr>
+                                    <td S   >
+                                        <h4>TUJUAN</h4>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td colspan="2">
+                                        <button onclick="caritikethotel()"><img src="../main/img/search.png"  /></button>
+                                    </td>
+
+
+                                </tr>
+                                <tr  style="border-bottom: 1px solid white;">
+                                    <td >
+                                        <a>search kota yang di kunjungi</a>
+                                    </td>
+                                    <td colspan="3" >
+                                        <input id="Hkedatangan" list="kota dikunjungi" placeholder="masukan kota yang anda kunjungi">
+
+                                    </td>
+
+                                </tr>
+                                <tr >
+                                    <td colspan="2">
+                                        <h4>Lama Menginap</h4>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+
+                                </tr>
+                                <tr >
+                                    <td >
+                                        <a> check in</a>
+                                    </td>
+                                    <td>
+                                        <a> lama</a>
+                                    </td>
+                                    <td>
+                                        <a> check out</a>   
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <input type="date" name="checkin" id="checkin" min="28-02-2016" placeholder="tanggal anda menginap"/>
+
+                                    </td>
+                                    <td>
+                                        <input type="number" id="lama" name="lama" value="0"  min="0" max ="30" style="width: 40px;" onchange="hitung()"/><a>hari</a>
+
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="checkin" id="checkout" min="2016-01-02" placeholder="tangggal selesei menginap"   readonly/> 
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="content3"></a>
+        <div class="container-fluid"  id="content3"  >
+
+            <div class="row" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <button type="button" class="btn btn-primary btn-block" onclick="startGame()">start game</button>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <a name="content4" ></a>
+        <div class="container-fluid" id="content4" >
+
+            <div class="row" >
+                <div class="col-xs-6 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Table</div>
+                        <div class="panel-body">
+                            <p>panel table</p>
+                        </div>
+
+
+                        <table class="table">
+                            <tr>
+
+                                <th>Senin</th>
+                                <th>Selasa</th>
+                                <th>Rabu</th>
+                                <th>kamis</th>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Basis Data</td>
+                                <td>Desain Web</td>
+                                <td>Matematik</td>
+                                <td>b.indonesia</td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Desain Web</td>
+                                <td>Struktur Data</td>
+                                <td>Basis Data</td>
+                                <td>b.inggris</td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Struktur Data</td>
+                                <td>Pemrograman</td>
+                                <td>Matematika</td>
+                                <td>b.arab</td>
+
+
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">List</div>
+                        <div class="panel-body">
+                            <p>panel with list</p>
+                        </div>
+
+                        <!-- List group -->
+                        <ul class="list-group">
+                            <li class="list-group-item">senin</li>
+                            <li class="list-group-item">selasa</li>
+                            <li class="list-group-item">rabu</li>
+                            <li class="list-group-item">kamis</li>
+                            <li class="list-group-item">jumat</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Optional: clear the XS cols if their content doesn't match in height -->
+
+                <div class="col-xs-6 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Video</div>
+                        <div class="panel-body">
+                            <p>panel with video</p>
+                        </div>
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="../main/img/Dota 2 WTF Moments 199.mp4"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="contact"></a>
+        <div class="container-fluid bg-grey" id="contact">
+            <h2 class="text-center">CONTACT</h2>
+            <div class="row">
+                <div class="col-sm-5">
+                    <p>Contact us and we'll get back to you within 24 hours.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Tebet ,Indonesia</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +021 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> comp.ahmadhidayat@gmail.com</p> 
+                </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div id="map" style="width:1300px;height:400px;background:yellow"></div>
+
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+
+
+
+        <footer class="container-fluid text-center">
+            <a href="#" title="To Top" >
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
+    </body>
+</html>
